@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: grid;
+  background-color: aliceblue;
+  margin: 10px 100px;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 50px)  100px 50px;
+  gap: 20px;
+}
+.feedback,
+button  {
+  grid-column: 1 / 3;
+}
+
+input, 
+.feedback,
+select  {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+input:focus, 
+.feedback:focus,
+select:focus {
+ outline: none;
+
+}
+select {
+  color: gray;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
